@@ -169,11 +169,11 @@ nav {
 [data-theme="light"] .tog-thumb { transform: translateX(16px); }
 
 /* ── SECTION BASE ── */
-section {
+/* section {
   padding: 100px 48px;
   max-width: 1100px;
   margin: 0 auto;
-}
+} */
 section:first-of-type { padding-top: calc(var(--nav-h) + 60px); }
 
 .section-label {

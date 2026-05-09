@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Nguyen — Full Stack Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./index.js">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="logo">$ <span>~/</span>alex-nguyen</a>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
+    <div class="theme-toggle" onclick="toggleTheme()" role="button" tabindex="0" aria-label="Toggle dark/light mode">
+      <span class="tog-label" id="tog-label">dark</span>
+      <div class="tog-track"><div class="tog-thumb"></div></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-prompt">~/alex-nguyen $ whoami</div>
+  <h1 class="hero-h1">
+    Full Stack<br>
+    <span class="acc">Engineer</span><br>
+    <span class="dim">&amp; System</span> Builder
+  </h1>
+  <p class="hero-sub">
+    I design and ship performant web applications, distributed backends, and developer tooling. 5+ years turning complex problems into clean, maintainable code.<span class="hero-cursor"></span>
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn-primary">./view_projects</a>
+    <a href="#contact" class="btn-secondary">get_in_touch()</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="num">47+</span>
+      <span class="lbl">Projects shipped</span>
+    </div>
+    <div class="stat">
+      <span class="num">5 yrs</span>
+      <span class="lbl">Experience</span>
+    </div>
+    <div class="stat">
+      <span class="num">12</span>
+      <span class="lbl">Open source repos</span>
+    </div>
+    <div class="stat">
+      <span class="num">3M+</span>
+      <span class="lbl">Users served</span>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">about</div>
+    <h2 class="section-title">Who I <span class="acc">am</span></h2>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-bio">
+      <p>
+        I'm a <span class="highlight">Full Stack Engineer</span> based in San Francisco, currently building infrastructure at <span class="highlight">Stripe</span>. I specialize in scalable backend systems, React-based frontends, and developer tooling that makes other engineers faster.
+      </p>
+      <p>
+        Before Stripe, I led engineering at two YC-backed startups — shipping from zero to production, hiring teams, and architecting systems that scaled from hundreds to millions of users.
+      </p>
+      <p>
+        When I'm not writing code, I contribute to open source, write about systems design on my blog, and occasionally speak at local meetups about distributed systems and engineering culture.
+      </p>
+    </div>
+    <div class="about-info">
+      <div class="info-row">
+        <span class="info-label">Status</span>
+        <span class="info-val"><span class="status-dot"></span>Open to opportunities</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Location</span>
+        <span class="info-val">San Francisco, CA</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Currently at</span>
+        <span class="info-val">Stripe</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Specialization</span>
+        <span class="info-val">Full Stack / Backend</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Education</span>
+        <span class="info-val">CS, UC Berkeley</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Languages</span>
+        <span class="info-val">TypeScript, Python, Go</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" style="max-width:1100px;margin:0 auto;"></div>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="reveal">
+    <div class="section-label">skills</div>
+    <h2 class="section-title">Tech <span class="acc">stack</span></h2>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="skill-group-title">Frontend</div>
+      <div class="skill-item"><span class="skill-name">React / Next.js</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="94"></div></div></div>
+      <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="92"></div></div></div>
+      <div class="skill-item"><span class="skill-name">CSS / Tailwind</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">GraphQL</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="80"></div></div></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Backend</div>
+      <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="95"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="90"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Go</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="75"></div></div></div>
+      <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Infrastructure</div>
+      <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="85"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Docker / K8s</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Terraform</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="70"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Redis / Kafka</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="78"></div></div></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Tooling</div>
+      <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="97"></div></div></div>
+      <div class="skill-item"><span class="skill-name">CI/CD (GH Actions)</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Datadog / Sentry</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Figma</span><div class="skill-bar-wrap"><div class="skill-bar" data-w="65"></div></div></div>
+    </div>
+  </div>
+  <div class="tech-tags reveal" style="margin-top:32px">
+    <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span>
+    <span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">Go</span>
+    <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span>
+    <span class="tag">GraphQL</span><span class="tag">REST</span><span class="tag">gRPC</span>
+    <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS</span>
+    <span class="tag">Terraform</span><span class="tag">Kafka</span><span class="tag">Linux</span>
+  </div>
+</section>
+
+<div class="divider" style="max-width:1100px;margin:0 auto;"></div>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="reveal">
+    <div class="section-label">projects</div>
+    <h2 class="section-title">Selected <span class="acc">work</span></h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card featured reveal">
+      <div>
+        <div class="proj-num">01 · featured</div>
+        <div class="proj-title">StreamFlow — Real-time Data Pipeline</div>
+        <p class="proj-desc">A distributed event-streaming platform handling 2M+ events/day. Built with Kafka, Go microservices, and a React dashboard. Reduced data latency from 8s to under 200ms. Deployed across 3 AWS regions with 99.98% uptime.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Go</span>
+          <span class="proj-tag">Kafka</span>
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">AWS</span>
+          <span class="proj-tag">Kubernetes</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="terminal-lines">
+          <div><span class="t-green">$</span> streamflow start --region us-east-1</div>
+          <div class="t-dim">▸ Connecting to Kafka cluster...</div>
+          <div><span class="t-green">✓</span> Consumers ready (12 workers)</div>
+          <div><span class="t-green">✓</span> Pipeline active — 2.1M events/day</div>
+          <div class="t-dim">▸ Latency: <span class="t-green">187ms avg</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="proj-num">02</div>
+      <div class="proj-title">DevKit CLI</div>
+      <p class="proj-desc">A developer productivity CLI tool with 1,400+ GitHub stars. Automates project scaffolding, manages environment configs, and integrates with GitHub, Linear, and Slack.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Open Source</span>
+      </div>
+      <div class="proj-links">
+        <a href="#" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          1.4k stars
+        </a>
+        <a href="#" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          npm
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="proj-num">03</div>
+      <div class="proj-title">Argos — Observability Platform</div>
+      <p class="proj-desc">Internal monitoring dashboard used by 80+ engineers. Aggregates metrics from Datadog, Sentry, and PagerDuty into a unified incident response interface with AI-powered root cause suggestions.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">React</span>
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">PostgreSQL</span>
+      </div>
+      <div class="proj-links">
+        <a href="#" class="proj-link">Case study →</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="proj-num">04</div>
+      <div class="proj-title">Lumen — Auth SDK</div>
+      <p class="proj-desc">A lightweight authentication library for Node.js with JWT, OAuth2, and passkey support. Zero external dependencies, 100% TypeScript, full test coverage. 6,000+ weekly npm downloads.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Security</span>
+        <span class="proj-tag">Open Source</span>
+      </div>
+      <div class="proj-links">
+        <a href="#" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="#" class="proj-link">Docs</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider" style="max-width:1100px;margin:0 auto;"></div>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="reveal">
+    <div class="section-label">experience</div>
+    <h2 class="section-title">Work <span class="acc">history</span></h2>
+  </div>
+  <div class="exp-list">
+
+    <div class="exp-item reveal">
+      <div class="exp-left">
+        <div class="exp-period">2022 — Present</div>
+        <div class="exp-company">Stripe</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role">Senior Software Engineer — Infrastructure</div>
+        <p class="exp-desc">Core contributor to Stripe's internal developer platform. Own reliability and performance of the API gateway serving 100M+ requests/day.</p>
+        <ul class="exp-bullets">
+          <li>Redesigned request routing layer, reducing p99 latency by 34%</li>
+          <li>Led migration from monolith to service mesh (Envoy + Istio) across 60 services</li>
+          <li>Built an internal CLI toolchain now used by 400+ engineers globally</li>
+          <li>Mentored 3 junior engineers to senior promotion</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">Go</span><span class="exp-tag">Ruby</span>
+          <span class="exp-tag">Kubernetes</span><span class="exp-tag">Envoy</span>
+          <span class="exp-tag">Postgres</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-left">
+        <div class="exp-period">2020 — 2022</div>
+        <div class="exp-company">Vercel (YC W20)</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role">Software Engineer — Platform</div>
+        <p class="exp-desc">First engineering hire. Built core platform features from 0 to 50k users including the deployment pipeline, preview environments, and edge config system.</p>
+        <ul class="exp-bullets">
+          <li>Architected the edge config storage system — now serving 8B reads/month</li>
+          <li>Built real-time deployment log streaming using Server-Sent Events</li>
+          <li>Grew engineering team from 1 to 12 engineers; led hiring process</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">Node.js</span><span class="exp-tag">React</span>
+          <span class="exp-tag">AWS</span><span class="exp-tag">TypeScript</span>
+          <span class="exp-tag">Redis</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-left">
+        <div class="exp-period">2019 — 2020</div>
+        <div class="exp-company">Brex (YC W17)</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role">Software Engineer — Fullstack</div>
+        <p class="exp-desc">Worked across the stack on Brex's card and spend management product. Focused on frontend performance and backend financial data pipelines.</p>
+        <ul class="exp-bullets">
+          <li>Reduced dashboard initial load time from 6.2s to 1.4s via code splitting and caching</li>
+          <li>Built the transaction categorization service processing $2B+ in monthly spend</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">React</span><span class="exp-tag">Python</span>
+          <span class="exp-tag">Elixir</span><span class="exp-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider" style="max-width:1100px;margin:0 auto;"></div>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">contact</div>
+    <h2 class="section-title">Let's <span class="acc">connect</span></h2>
+  </div>
+  <div class="contact-inner reveal">
+    <div class="contact-left">
+      <div class="contact-heading">Got a project in<br>mind? <span class="acc">Let's talk.</span></div>
+      <p class="contact-desc">
+        I'm open to senior and staff-level engineering roles, freelance architecture projects, and open source collaborations. Response time: usually within 24 hours.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:alex@nguyen.dev" class="contact-link">
+          <span class="link-icon">@</span>
+          alex@nguyen.dev
+        </a>
+        <a href="https://github.com" class="contact-link" target="_blank">
+          <span class="link-icon">gh</span>
+          github.com/alex-nguyen
+        </a>
+        <a href="https://linkedin.com" class="contact-link" target="_blank">
+          <span class="link-icon">in</span>
+          linkedin.com/in/alexnguyen
+        </a>
+        <a href="#" class="contact-link">
+          <span class="link-icon">↓</span>
+          Download resume (PDF)
+        </a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-group">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-input" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="Tell me about the project..."></textarea>
+      </div>
+      <button class="form-submit" onclick="handleSend(this)">send_message()</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Alex Nguyen — <a href="#">alex@nguyen.dev</a></span>
+  <span>Built with vanilla HTML · No frameworks · No BS</span>
+</footer>
+
+<script>
+    // theme toggle
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.dataset.theme === 'dark';
+  html.dataset.theme = isDark ? 'light' : 'dark';
+  document.getElementById('tog-label').textContent = isDark ? 'light' : 'dark';
+}
+document.querySelector('.theme-toggle').addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleTheme(); }
+});
+
+// scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+
+// skill bars
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.skill-bar').forEach(bar => {
+        setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 200);
+      });
+      barObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skill-group').forEach(g => barObserver.observe(g));
+
+// contact form
+function handleSend(btn) {
+  const orig = btn.textContent;
+  btn.textContent = 'sending...';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'message_sent ✓';
+    btn.style.background = '#00aa66';
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.disabled = false;
+      btn.style.background = '';
+    }, 3000);
+  }, 1200);
+}
+
+// active nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current
+      ? 'var(--accent)' : '';
+  });
+}, { passive: true });
+
+// typing effect
+const heroPrompt = document.querySelector('.hero-prompt');
+const text = heroPrompt.textContent;
+heroPrompt.textContent = '';
+let i = 0;
+function type() {
+  if (i < text.length) {
+    heroPrompt.textContent += text[i++];
+    setTimeout(type, 38);
+  }
+}
+setTimeout(type, 300);
+</script>
+</body>
+</html>
